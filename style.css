@@ -78,6 +78,14 @@ input {
     padding: 2rem 1rem;
 }
 
+.logo, .nav-cards, .tool-cards {
+    display: inline-grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
 .main-content {
     background-color: whitesmoke;
     grid-area: main;

@@ -78,12 +78,18 @@ input {
     padding: 2rem 1rem;
 }
 
+.navigation, .tools {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+}
+
 .logo, .nav-cards, .tool-cards {
     display: inline-grid;
     grid-auto-flow: column;
     align-items: center;
+    justify-content: start;
     gap: 1rem;
-    margin-bottom: 1rem;
 }
 
 .main-content {

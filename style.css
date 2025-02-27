@@ -28,7 +28,7 @@ body {
 .header * {
     display: flex;
     justify-content: space-between;
-    gap: 5rem;
+    gap: 2rem;
 }
 
 .top-bar *, .bottom-bar * {
@@ -39,7 +39,9 @@ body {
 }
 
 .search {
-    gap: 1rem
+    display: flex;
+    width: 60%;
+    gap: 1rem;
 }
 
 .top-bar img {
@@ -58,7 +60,8 @@ body {
 }
 
 input {
-    width: 30rem;
+    flex: 2;
+    width: 100%;
     height: 2rem;
     border-radius: 1.5rem;
     padding: 0 1rem;
@@ -101,9 +104,31 @@ input {
 
 .cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     gap: 2rem;
     padding: 1rem;
+}
+
+.card, .text-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    padding: 1rem;
+    gap: 2rem;
+    border-radius: 0.5rem;
+    border-left: 1rem lightblue solid;
+}
+
+.text-content {
+    gap: 1rem;
+}
+
+.nav-icons {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
 }
 
 .sidebar-container {

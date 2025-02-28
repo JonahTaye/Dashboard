@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px black solid; */
+    border: 1px black solid;
+}
+
+:root {
+    --dark-blue: #0B132B;
+    --light-blue: #507DBC;
+    --sky-blue: #A1C6EA;
+    --slight-blue: #BBD1EA;
+    --off-white: #BBD1EA;
 }
 
 body {
@@ -14,6 +24,8 @@ body {
     grid-template-areas: 
     "sidebar header"
     "sidebar main";
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
 }
 
 .header {
@@ -109,10 +121,6 @@ input {
     gap: 1rem;
 }
 
-.content {
-    display: grid;
-}
-
 .cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
@@ -144,11 +152,14 @@ input {
     gap: 1rem;
 }
 
+.sidebar-content {
+    padding: 0 1rem;
+}
+
 .sidebar-container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 1rem;
 }
 
 .announcements, .trending {

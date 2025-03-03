@@ -151,6 +151,14 @@ input:focus {
     gap: 0.5rem;
 }
 
+.navigation {
+    grid-auto-rows: 15rem;
+}
+
+.tools {
+    grid-auto-rows: 10rem;
+}
+
 .logo, .nav-cards, .tool-cards {
     display: inline-grid;
     grid-auto-flow: column;
@@ -163,6 +171,7 @@ input:focus {
 .nav-cards, .tool-cards {
     gap: 1.5rem;
     font-size: 1.2rem;
+    grid-auto-rows: 2rem;
 }
 
 .nav-cards:hover, .tool-cards:hover {

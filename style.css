@@ -184,7 +184,7 @@ input:focus {
     background-color: var(--slight-blue);
     grid-area: main;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2.5fr 1fr;
     padding: 2rem 0 1rem 1rem;
     box-shadow: inset 2px 8px 5px 3px rgba(0, 0, 0, 0.301);
 }
@@ -251,19 +251,26 @@ input:focus {
 .announcements, .trending {
     display: flex;
     flex-direction: column;
-    background-color: whitesmoke;
-    padding: 1rem;
+    background-color: var(--off-white);
+    padding:  1rem 2rem;
     border-radius: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--dark-blue);
+    box-shadow: 8px 10px 5px -3px rgba(0, 0, 0, 0.301);;
 }
 
 .announcements {
     gap: 1rem;
 }
 
+.announcement-cards h1, .trending-cards h2 {
+    font-size: 1rem;
+}
+
 .announcement-cards {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.2rem;
     border-bottom: 2px gray solid;
     border-radius: 0.1rem;
     padding-bottom: 1rem;

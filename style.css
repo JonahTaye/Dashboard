@@ -236,6 +236,12 @@ input:focus {
     display: flex;
     justify-content: end;
     gap: 1rem;
+    background-color: transparent
+}
+
+.nav-icons button {
+    border: none;
+    background-color: transparent;
 }
 
 .sidebar-content {
